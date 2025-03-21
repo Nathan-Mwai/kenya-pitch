@@ -1,21 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 475px;
+  --color-primary-100: #FFE8F0;
+  --color-primary-DEFAULT: #EE2B69;
+  --color-primary-kenyan-flag-gradient: linear-gradient(to right, #000000, #D00032, #009639);
+  --color-secondary:#FBE843;
+  --color-black-100: #333333;
+  --color-black-200: #141413;
+  --color-black-300: #7D8087;
+  --color-black-DEFAULT: #000000;
+  --color-white-100: #F7F7F7;
+  --color-white-DEFAULT: #FFF;
+  --font-work-sans: var(--font-work-sans);
+  --radius-lg:var(--radius);
+  --radius-lg:calc(var(--radius) - 2px);
+  --radius-lg:calc(var(--radius) - 4px)
+}
+
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply uppercase bg-black px-6 py-3 font-work-sans font-extrabold  text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5
   }
 }
 
