@@ -1,7 +1,10 @@
 import SearchForm from "@/components/SearchForm";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home({searchParams}: {
+  searchParams: Promise<{query?:string}>
+}) {
+  const query = (await searchParams).query;
   return (
     <>
       <section className="pink_container bg-gradient-to-r from-black-200 via-red-600 to-green-600 pattern">
@@ -15,7 +18,7 @@ export default function Home() {
           Submit Ideas, Gauge The Pitches, and Get Noticed in Virtual
           Competitions.
         </p>
-        <SearchForm/>
+        <SearchForm query={query}/>
       </section>
     </>
   );
