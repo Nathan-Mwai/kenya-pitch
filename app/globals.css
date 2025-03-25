@@ -7,7 +7,7 @@
 @theme {
   --breakpoint-xs: 475px;
   --color-primary-100: #ffe8f0;
-  --color-primary-DEFAULT: #EE2B69;
+  --color-primary-DEFAULT: #B8C6B1;
   --color-secondary: #fbe843;
   --color-black-100: #333333;
   --color-black-200: #141413;
@@ -21,7 +21,7 @@
   --radius-sm: calc(var(--radius) - 4px);
   --shadow-100: 2px 2px 0px 0px rgb(0, 0, 0);
   --shadow-200: 2px 2px 0px 2px rgb(0, 0, 0);
-  --shadow-300: 2px 2px 0px 2px rgb(238, 43, 105);
+  --shadow-300: 2px 2px 0px 2px rgb(184, 198, 177);
 }
 
 @layer utilities {
@@ -160,7 +160,7 @@
   }
 
   .startup-card {
-    @apply bg-white border-[5px] border-black py-6 px-5 rounded-[22px] shadow-200 hover:border-primary-DEFAULT transition-all duration-500 hover:shadow-300 hover:bg-primary-100;
+    @apply bg-white border-[5px] border-black py-6 px-5 rounded-[22px] shadow-200 hover:border-primary-DEFAULT transition-all duration-500 hover:shadow-300 hover:bg-[#A8B89E];
   }
 
   .startup-card_date {
