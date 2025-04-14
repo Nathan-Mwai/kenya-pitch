@@ -41,7 +41,7 @@ const {_createdAt, views, author,title,description, category, _id, image }= post
             <img src={image} alt="placeholder" className="startup-card_img" />
         </Link>
         <div className="flex-between gap-3 mt-5">
-            <Link href={`/query=${category?.toLowerCase()}`} >
+            <Link href={`/?query=${category?.toLowerCase()}`} >
                 <p className="text-16-medium">{category}</p>
             </Link>
             <Button className="startup-card_btn" asChild>
